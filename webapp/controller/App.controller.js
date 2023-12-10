@@ -6,7 +6,7 @@ sap.ui.define([
 	return Controller.extend("com.swcc.it.SSP_IT.controller.App", {
 
 		onInit: function () {
-
+			this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());
 		}
 	});
 });

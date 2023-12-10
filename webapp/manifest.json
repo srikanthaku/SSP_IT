@@ -58,6 +58,11 @@
 				"settings": {
 					"bundleName": "com.swcc.it.SSP_IT.i18n.i18n"
 				}
+			},
+			"": {
+				"type": "sap.ui.model.json.JSONModel",
+				"settings": {},
+				"preload": false
 			}
 		},
 		"resources": {
@@ -79,14 +84,80 @@
 				"name": "RouteApp",
 				"pattern": "RouteApp",
 				"target": ["TargetApp"]
+			}, {
+				"name": "ModuleSelect",
+				"pattern": "ModuleSelect",
+				"target": [
+					"ModuleSelect"
+				]
+			}, {
+				"name": "CustRegistration",
+				"pattern": "",
+				"target": [
+					"CustRegistration"
+				]
+			}, {
+				"name": "HomePage",
+				"pattern": "HomePage",
+				"target": [
+					"HomePage"
+				]
+			}, {
+				"name": "SlaCreation",
+				"pattern": "SlaCreation",
+				"target": [
+					"SlaCreation"
+				]
+			}, {
+				"name": "Non_Procurement_ITRequest",
+				"pattern": "Non_Procurement_ITRequest",
+				"target": [
+					"Non_Procurement_ITRequest"
+				]
 			}],
 			"targets": {
 				"TargetApp": {
 					"viewType": "XML",
 					"transition": "slide",
 					"clearControlAggregation": false,
-					"viewId": "App",
-					"viewName": "App"
+					"viewName": "CustomerRegistration"
+				},
+				"ModuleSelect": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "ModuleSelect"
+				},
+				"LandingView": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "ScmCreateRequest"
+				},
+				"CustRegistration": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "CustomerRegistration"
+				},
+				"HomePage": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "HomePage"
+				},
+
+				"SlaCreation": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "SlaCreation"
+				},
+				"Non_Procurement_ITRequest": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "Non_Procurement_ITRequest"
 				}
 			}
 		}
