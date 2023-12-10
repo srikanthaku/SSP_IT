@@ -114,6 +114,12 @@
 				"target": [
 					"Non_Procurement_ITRequest"
 				]
+			}, {
+				"name": "Procurement_ITRequest",
+				"pattern": "Procurement_ITRequest",
+				"target": [
+					"Procurement_ITRequest"
+				]
 			}],
 			"targets": {
 				"TargetApp": {
@@ -158,6 +164,12 @@
 					"transition": "slide",
 					"clearControlAggregation": false,
 					"viewName": "Non_Procurement_ITRequest"
+				},
+				"Procurement_ITRequest": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "Procurement_ITRequest"
 				}
 			}
 		}

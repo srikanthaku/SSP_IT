@@ -34,6 +34,8 @@ sap.ui.define([
 				var sKey = oEve.getSource().getSelectedKey();
 				if (sKey === "1") {
 					this.oRouter.navTo("Non_Procurement_ITRequest");
+				} else {
+					this.oRouter.navTo("Procurement_ITRequest");
 				}
 
 			},

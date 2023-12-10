@@ -72,6 +72,11 @@
 					<core:Item key="2" text="Non Procurement"/>
 				</items>
 			</ComboBox>
+			<Label text="{i18n>SelectSubService}" required="true"/>
+			<ComboBox id="idsubservice" width="100%" valueState="None" placeholder="Select" selectedKey="{TabDetailsModel>/TabData/ProdType}"
+				items="{TabDetailsModel>/ProductTypeSet}">
+				<core:ListItem key="{key}" text="{text}"/>
+			</ComboBox>
 			<Button text="Search" type="Default" press="onSearch" width="65%" class="sapUiTinyMarginBegin sapUiContentPadding swcc-pmy-btn"/>
 		</fm:SimpleForm>
 	</HBox>
